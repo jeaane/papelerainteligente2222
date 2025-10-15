@@ -101,3 +101,17 @@ footer {
 #bunnyRight {
   right: 20px;
 }
+
+.article-image {
+  width: 100vw; /* ocupa todo el ancho de la ventana */
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* elimina espacios debajo de la imagen */
+}
