@@ -2,7 +2,7 @@
 
 Una práctica que combina tecnología y diseño emocional para crear una papelera inteligente 🗑️
 
-##  🐾 Prerrequisitos 🐾
+##  🐾 Prerrequisitos 🐾<img src="conejito/gbjjjkujjkjhkjk.png" alt="Bunny suavecito" width="200"/>
 
 - Tener una cuenta en Github
 - Tener una cuenta en Tinkercad
