@@ -1,0 +1,103 @@
+/* Tipografía y fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  background-color: #fdf6f0;
+  color: #4e342e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h1, h2, h5 {
+  color: #8d6e63;
+}
+
+h2 {
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+/* Navegación personalizada */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  color: #6d4c41;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Galería de imágenes */
+.gallery img {
+  width: 100px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#lightbox img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* Simulación SVG */
+svg {
+  margin-top: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #d7ccc8;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  font-size: 0.8rem;
+}
+/* Interactividad suave en tarjetas de proyectos */
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+#bunnyLeft, #bunnyRight {
+  position: fixed;
+  bottom: 20px;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+}
+
+#bunnyLeft {
+  left: 20px;
+}
+
+#bunnyRight {
+  right: 20px;
+}
