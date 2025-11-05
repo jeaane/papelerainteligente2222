@@ -168,23 +168,26 @@ Enlace al video explicando paso a paso el desarrollo del proyecto.
     </section>
 
     
-    <section id="simulacion">
-  <h2 class="text-center">🧪 Simulación Interactiva</h2>
+    <section id="simulacion" class="text-center">
+  <h2>🧪 Simulación Interactiva</h2>
 
-  <!-- SVG centrado con Flexbox -->
-  <div class="d-flex justify-content-center">
-    <svg id="svgBin" viewBox="0 0 200 200" width="100%" height="auto" style="max-width: 400px;" role="img" aria-label="Simulación de papelera con tapa y mapache">
-      <rect x="50" y="80" width="100" height="100" fill="#a1887f" rx="10" />
-      <rect id="lid" x="50" y="60" width="100" height="20" fill="#bcaaa4" rx="10" />
-      <text x="100" y="150" text-anchor="middle" font-size="24">🦝</text>
-    </svg>
+  <!-- SVG dentro de un contenedor centrado y adaptable -->
+  <div style="display: flex; justify-content: center;">
+    <div style="max-width: 100%; width: 100%; text-align: center;">
+      <svg id="svgBin" viewBox="0 0 200 200" style="width: 100%; max-width: 300px; height: auto;" role="img" aria-label="Simulación de papelera con tapa y mapache">
+        <rect x="50" y="80" width="100" height="100" fill="#a1887f" rx="10" />
+        <rect id="lid" x="50" y="60" width="100" height="20" fill="#bcaaa4" rx="10" />
+        <text x="100" y="150" text-anchor="middle" font-size="24">🦝</text>
+      </svg>
+    </div>
   </div>
 
-  <!-- Botón centrado debajo del SVG -->
-  <div class="text-center mt-3">
+  <!-- Botón centrado debajo -->
+  <div class="mt-3">
     <button class="btn btn-warning" onclick="abrirTapa()">Activar Sensor</button>
   </div>
 </section>
+
 
 
 
