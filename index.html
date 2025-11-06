@@ -10,11 +10,20 @@
 
   <!-- Estilos personalizados -->
   <style>
+    .section-dark {
+
+  background-color: #4e342e; /* Marrón oscuro suave */
+  color: #ffe0b2; /* Beige claro para contraste */
+  padding: 2em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
     #bunnyLeft, #bunnyRight {
   position: fixed;
-  bottom: 20px;
-  width: 290px;
-  height: 290px;
+  bottom: 1px;
+  width: 400px;
+  height: 400px;
   z-index: 10;
 }
 
@@ -146,29 +155,60 @@
     </header>
     <img src="conejito/25.webp" alt="Imagen de la papelera inteligente" class="img-fluid my-4" />
     
-    <section id="objetivos">
-      <h2>🎯 Objetivos</h2>
-      <p>Diseñar una papelera automatizada que promueva la higiene, el aprendizaje tecnológico y la conciencia ecológica.</p>
+    <section id="objetivos" class="section-dark">
+      <h2>Description</h2>
+       <div class="clearfix">
+    <img src="images/jk.png" alt="Binny papelera" class="img-fluid rounded float-end ms-3 mb-3" style="max-width: 200px;" />
+      <p>Papelera automatizada que promueva la higiene, el aprendizaje tecnológico y la conciencia ecológica. Facilita la gestión de residuos mediante tecnología automatizada. Gracias a sensores de proximidad, reconocimiento de materiales y conectividad, el sistema permite clasificar desechos de forma autónoma, optimizando el reciclaje y reduciendo la contaminación.</p>
     </section>
 
-    <section id="tecnica">
-      <h2>⚙️ Funcionamiento Técnico</h2>
-      <p>El sistema utiliza Arduino UNO, sensor HC-SR04 y un servo motor para abrir la tapa automáticamente.</p>
-      <pre><code>
+    <section id="tecnica" class="section-dark">
+  <h2>⚙️ Funcionamiento Técnico</h2>
+  <p>El sistema utiliza Arduino UNO, sensor HC-SR04 y un servo motor para abrir la tapa automáticamente.</p>
+
+  <pre><code>
 #include &lt;Servo.h&gt;
 Servo tapa;
-<a href="https://drive.google.com/file/d/1Nn5xqspPGFLC6uyIEZ6JkD857iY9fIoH/view?pli=1">//🐰 Código Arduino aquí...</a>
+</code></pre>
 
-Enlace descarga esquema de conexiones.
-<a href="https://drive.google.com/file/d/1hOB2PJu6qkDHz6v_NEZMPMwFRr7izCx4/view">//🐰 🐰🐰🐰 aquí...</a>
+  <!-- Contenedor flex para las imágenes -->
+  <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+    <!-- Imagen 1 -->
+    <div style="text-align: center;">
+      <a href="https://github.com/jeaane/OTM-.git" target="_blank">
+        <img src="images/hl.png" alt="GitHub 2022" style="width:150px;">
+      </a>
+      <p>OTM_Practica1</p>
+    </div>
 
-Enlace al video explicando paso a paso el desarrollo del proyecto.
-<a href="https://www.youtube.com/watch?v=vFfoqZ0w5Jo&list=LL&index=8&t=8s">//🐰 🐰🐰🐰🐰  🐰🐰🐰🐰aquí...</a>
-      </code></pre>
-    </section>
+    <!-- Imagen 2 -->
+    <div style="text-align: center;">
+      <a href="https://github.com/jeaane/otm106_practica2.git" target="_blank">
+        <img src="images/hl.png" alt="Sitio ejemplo" style="width:150px;">
+      </a>
+      <p>OTM_Practica2</p>
+    </div>
+
+    <!-- Imagen 3 -->
+    <div style="text-align: center;">
+      <a href="https://github.com/jeaane/otm106_practica3.git" target="_blank">
+        <img src="images/hl.png" alt="Portafolio" style="width:150px;">
+      </a>
+      <p>OTM_Practica3</p>
+    </div>
+  </div>
+
+  <!-- Enlaces adicionales -->
+  <div style="margin-top: 20px;">
+    <p><a href="https://drive.google.com/file/d/1Nn5xqspPGFLC6uyIEZ6JkD857iY9fIoH/view?pli=1">//🐰 Código Arduino aquí...</a></p>
+    <p><a href="https://drive.google.com/file/d/1hOB2PJu6qkDHz6v_NEZMPMwFRr7izCx4/view">//🐰 🐰🐰🐰 aquí...</a></p>
+    <p><a href="https://www.youtube.com/watch?v=vFfoqZ0w5Jo&list=LL&index=8&t=8s">//🐰 🐰🐰🐰🐰 🐰🐰🐰🐰 aquí...</a></p>
+  </div>
+</section>
+
 
     
-    <section id="simulacion" class="text-center">
+    <section id="simulacion" class="section-dark text-center">
   <h2>🧪 Simulación Interactiva</h2>
 
   <!-- SVG dentro de un contenedor centrado y adaptable -->
@@ -191,7 +231,7 @@ Enlace al video explicando paso a paso el desarrollo del proyecto.
 
 
 
-    <section id="galeria">
+    <section id="galeria" class="section-dark">
       <h2>🖼️ Galería de Fotos</h2>
       
         <img src="11111.png" alt="Imagen de la papelera inteligente" class="img-fluid my-4" />
@@ -201,7 +241,7 @@ Enlace al video explicando paso a paso el desarrollo del proyecto.
     </section>
 
     <!-- Tarjetas de proyectos -->
-<section class="container my-4">
+<section class="container my-4 section-dark">
   <h2 class="h6 text-center mb-3">🎨 Proyectos destacados</h2>
   <div class="row g-3">
     <div class="col-md-4">
@@ -318,7 +358,7 @@ Enlace al video explicando paso a paso el desarrollo del proyecto.
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'animations/bunny.json'
+    path: 'animations/bear.json'
   });
 </script>
 </body>
