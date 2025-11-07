@@ -21,7 +21,7 @@
 
     #bunnyLeft, #bunnyRight {
   position: fixed;
-  bottom: 1px;
+  bottom: 20px;
   width: 400px;
   height: 400px;
   z-index: 10;
@@ -175,34 +175,32 @@ Servo tapa;
   <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
     <!-- Imagen 1 -->
     <div style="text-align: center;">
-      <a href="https://github.com/jeaane/OTM-.git" target="_blank">
+      <a href="https://drive.google.com/file/d/1Nn5xqspPGFLC6uyIEZ6JkD857iY9fIoH/view?pli=1" target="_blank">
         <img src="images/hl.png" alt="GitHub 2022" style="width:150px;">
       </a>
-      <p>OTM_Practica1</p>
+      <p>Codigo Arduino</p>
     </div>
 
     <!-- Imagen 2 -->
     <div style="text-align: center;">
-      <a href="https://github.com/jeaane/otm106_practica2.git" target="_blank">
+      <a href="https://www.tinkercad.com/things/iD5TYwftIFX-daring-bojo" target="_blank">
         <img src="images/hl.png" alt="Sitio ejemplo" style="width:150px;">
       </a>
-      <p>OTM_Practica2</p>
+      <p>tinkercad</p>
     </div>
 
     <!-- Imagen 3 -->
     <div style="text-align: center;">
-      <a href="https://github.com/jeaane/otm106_practica3.git" target="_blank">
+      <a href="https://www.youtube.com/watch?v=vFfoqZ0w5Jo&list=LL&index=8&t=8s" target="_blank">
         <img src="images/hl.png" alt="Portafolio" style="width:150px;">
       </a>
-      <p>OTM_Practica3</p>
+      <p>video</p>
     </div>
   </div>
 
   <!-- Enlaces adicionales -->
   <div style="margin-top: 20px;">
-    <p><a href="https://drive.google.com/file/d/1Nn5xqspPGFLC6uyIEZ6JkD857iY9fIoH/view?pli=1">//🐰 Código Arduino aquí...</a></p>
-    <p><a href="https://drive.google.com/file/d/1hOB2PJu6qkDHz6v_NEZMPMwFRr7izCx4/view">//🐰 🐰🐰🐰 aquí...</a></p>
-    <p><a href="https://www.youtube.com/watch?v=vFfoqZ0w5Jo&list=LL&index=8&t=8s">//🐰 🐰🐰🐰🐰 🐰🐰🐰🐰 aquí...</a></p>
+    
   </div>
 </section>
 
@@ -211,10 +209,14 @@ Servo tapa;
     <section id="simulacion" class="section-dark text-center">
   <h2>🧪 Simulación Interactiva</h2>
 
-  <!-- SVG dentro de un contenedor centrado y adaptable -->
-  <div style="display: flex; justify-content: center;">
-    <div style="max-width: 100%; width: 100%; text-align: center;">
-      <svg id="svgBin" viewBox="0 0 200 200" style="width: 100%; max-width: 300px; height: auto;" role="img" aria-label="Simulación de papelera con tapa y mapache">
+  <!-- Contenedor horizontal para imagen y simulador -->
+  <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 2rem;">
+    <!-- Imagen -->
+    <img src="images/gh.png" alt="Binny papelera" class="img-fluid rounded" style="max-width: 250px;" />
+
+    <!-- SVG simulador -->
+    <div style="max-width: 300px; width: 100%; text-align: center;">
+      <svg id="svgBin" viewBox="0 0 200 200" style="width: 100%; height: auto;" role="img" aria-label="Simulación de papelera con tapa y mapache">
         <rect x="50" y="80" width="100" height="100" fill="#a1887f" rx="10" />
         <rect id="lid" x="50" y="60" width="100" height="20" fill="#bcaaa4" rx="10" />
         <text x="100" y="150" text-anchor="middle" font-size="24">🦝</text>
@@ -223,7 +225,7 @@ Servo tapa;
   </div>
 
   <!-- Botón centrado debajo -->
-  <div class="mt-3">
+  <div class="mt-4">
     <button class="btn btn-warning" onclick="abrirTapa()">Activar Sensor</button>
   </div>
 </section>
@@ -231,14 +233,17 @@ Servo tapa;
 
 
 
-    <section id="galeria" class="section-dark">
-      <h2>🖼️ Galería de Fotos</h2>
-      
-        <img src="11111.png" alt="Imagen de la papelera inteligente" class="img-fluid my-4" />
-        <img src="222222.png" alt="Imagen de la papelera inteligente" class="img-fluid my-4" />
-        <img src="33333.png" alt="Imagen de la papelera inteligente" class="img-fluid my-4" />
-      
-    </section>
+
+    <section id="galeria" class="section-dark text-center">
+  <h2>🖼️ Galería de Fotos</h2>
+
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+    <img src="11111.png" alt="Imagen de la papelera inteligente" class="img-fluid rounded" style="max-width: 250px;" />
+    <img src="222222.png" alt="Imagen de la papelera inteligente" class="img-fluid rounded" style="max-width: 250px;" />
+    <img src="33333.png" alt="Imagen de la papelera inteligente" class="img-fluid rounded" style="max-width: 250px;" />
+  </div>
+</section>
+
 
     <!-- Tarjetas de proyectos -->
 <section class="container my-4 section-dark">
